@@ -1,0 +1,252 @@
+{
+    "status": true,
+    "code": 200,
+    "message": "Success.",
+    "error": "",
+    "data": {
+      "boardingInfo": {
+        "trainId": 7249,
+        "stationId": 157,
+        "arrivalTime": "05:23:00",
+        "departureTime": "05:23:00",
+        "haltTime": "00:00:00",
+        "stationCode": "LTT",
+        "stationName": "Lokmanyatilak T",
+        "travellingDay": 1,
+        "distance": "0",
+        "platform": "2"
+      },
+      "destinationInfo": {
+        "trainId": 7249,
+        "stationId": 7099,
+        "arrivalTime": "18:15:00",
+        "departureTime": "18:25:00",
+        "haltTime": "00:10:00",
+        "stationCode": "BPL",
+        "stationName": "Bhopal Jn",
+        "travellingDay": 1,
+        "distance": "834",
+        "platform": "2"
+      },
+      "seatInfo": {
+        "coach": "B2",
+        "berth": "20",
+        "noOfSeats": 2
+      },
+      "trainInfo": {
+        "trainNo": "20103",
+        "name": "LTT GKP SF EXP",
+        "boarding": "LTT",
+        "destination": "BPL",
+        "dt": "16-04-2024",
+        "boardingDayCount": null,
+        "fromStationName": null,
+        "toStationName": null,
+        "origin": null
+      },
+      "passengerInfo": [
+        {
+          "currentCoach": "B2",
+          "currentBerthNo": "20"
+        },
+        {
+          "currentCoach": "B2",
+          "currentBerthNo": "21"
+        }
+      ],
+      "trainRoutes": [
+        {
+          "trainId": 7249,
+          "stationId": 157,
+          "arrivalTime": "05:23:00",
+          "departureTime": "05:23:00",
+          "haltTime": "00:00:00",
+          "stationCode": "LTT",
+          "stationName": "Lokmanyatilak T",
+          "travellingDay": 1,
+          "distance": "0",
+          "platform": "2"
+        },
+        {
+          "trainId": 7249,
+          "stationId": 16,
+          "arrivalTime": "12:05:00",
+          "departureTime": "12:10:00",
+          "haltTime": "00:05:00",
+          "stationCode": "BSL",
+          "stationName": "Bhusaval Jn",
+          "travellingDay": 1,
+          "distance": "429",
+          "platform": "5,6"
+        },
+        {
+          "trainId": 7249,
+          "stationId": 38,
+          "arrivalTime": "14:15:00",
+          "departureTime": "14:20:00",
+          "haltTime": "00:05:00",
+          "stationCode": "KNW",
+          "stationName": "Khandwa",
+          "travellingDay": 1,
+          "distance": "552",
+          "platform": "2"
+        },
+        {
+          "trainId": 7249,
+          "stationId": 7114,
+          "arrivalTime": "16:35:00",
+          "departureTime": "16:40:00",
+          "haltTime": "00:05:00",
+          "stationCode": "ET",
+          "stationName": "Itarsi Jn",
+          "travellingDay": 1,
+          "distance": "736",
+          "platform": "1"
+        },
+        {
+          "trainId": 7249,
+          "stationId": 7099,
+          "arrivalTime": "18:15:00",
+          "departureTime": "18:25:00",
+          "haltTime": "00:10:00",
+          "stationCode": "BPL",
+          "stationName": "Bhopal Jn",
+          "travellingDay": 1,
+          "distance": "834",
+          "platform": "2"
+        },
+        {
+          "trainId": 7249,
+          "stationId": 8514,
+          "arrivalTime": "22:10:00",
+          "departureTime": "22:18:00",
+          "haltTime": "00:08:00",
+          "stationCode": "VGLJ",
+          "stationName": "Virangana Lakshmibai Jhansi Junction",
+          "travellingDay": 1,
+          "distance": "1125",
+          "platform": "3"
+        },
+        {
+          "trainId": 7249,
+          "stationId": 2116,
+          "arrivalTime": "23:40:00",
+          "departureTime": "23:42:00",
+          "haltTime": "00:02:00",
+          "stationCode": "ORAI",
+          "stationName": "Orai",
+          "travellingDay": 1,
+          "distance": "1239",
+          "platform": "2"
+        },
+        {
+          "trainId": 7249,
+          "stationId": 2118,
+          "arrivalTime": "00:35:00",
+          "departureTime": "00:37:00",
+          "haltTime": "00:02:00",
+          "stationCode": "PHN",
+          "stationName": "Pokhrayan",
+          "travellingDay": 2,
+          "distance": "1286",
+          "platform": "1"
+        },
+        {
+          "trainId": 7249,
+          "stationId": 1897,
+          "arrivalTime": "03:35:00",
+          "departureTime": "03:40:00",
+          "haltTime": "00:05:00",
+          "stationCode": "CNB",
+          "stationName": "Kanpur Central",
+          "travellingDay": 2,
+          "distance": "1345",
+          "platform": "5,6"
+        },
+        {
+          "trainId": 7249,
+          "stationId": 2456,
+          "arrivalTime": "06:00:00",
+          "departureTime": "06:10:00",
+          "haltTime": "00:10:00",
+          "stationCode": "ASH",
+          "stationName": "Aishbagh",
+          "travellingDay": 2,
+          "distance": "1417",
+          "platform": "0"
+        },
+        {
+          "trainId": 7249,
+          "stationId": 2462,
+          "arrivalTime": "06:47:00",
+          "departureTime": "06:50:00",
+          "haltTime": "00:03:00",
+          "stationCode": "BNZ",
+          "stationName": "Badshahnagar",
+          "travellingDay": 2,
+          "distance": "1427",
+          "platform": "1,2"
+        },
+        {
+          "trainId": 7249,
+          "stationId": 2477,
+          "arrivalTime": "09:00:00",
+          "departureTime": "09:05:00",
+          "haltTime": "00:05:00",
+          "stationCode": "GD",
+          "stationName": "Gonda Jn",
+          "travellingDay": 2,
+          "distance": "1540",
+          "platform": "2"
+        },
+        {
+          "trainId": 7249,
+          "stationId": 2468,
+          "arrivalTime": "09:46:00",
+          "departureTime": "09:48:00",
+          "haltTime": "00:02:00",
+          "stationCode": "BV",
+          "stationName": "Babhnan",
+          "travellingDay": 2,
+          "distance": "1598",
+          "platform": "2"
+        },
+        {
+          "trainId": 7249,
+          "stationId": 2466,
+          "arrivalTime": "10:20:00",
+          "departureTime": "10:23:00",
+          "haltTime": "00:03:00",
+          "stationCode": "BST",
+          "stationName": "Basti",
+          "travellingDay": 2,
+          "distance": "1629",
+          "platform": "3"
+        },
+        {
+          "trainId": 7249,
+          "stationId": 2490,
+          "arrivalTime": "10:45:00",
+          "departureTime": "10:47:00",
+          "haltTime": "00:02:00",
+          "stationCode": "KLD",
+          "stationName": "Khalilabad",
+          "travellingDay": 2,
+          "distance": "1659",
+          "platform": "2"
+        },
+        {
+          "trainId": 7249,
+          "stationId": 2481,
+          "arrivalTime": "11:45:00",
+          "departureTime": "11:45:00",
+          "haltTime": "00:00:00",
+          "stationCode": "GKP",
+          "stationName": "Gorakhpur Jn",
+          "travellingDay": 2,
+          "distance": "1693",
+          "platform": "7"
+        }
+      ]
+    }
+  }

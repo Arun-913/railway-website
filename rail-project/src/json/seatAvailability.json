@@ -1,0 +1,67 @@
+{
+    "status": true,
+    "message": "Success",
+    "timestamp": 1713109278002,
+    "data": [
+      {
+        "ticket_fare": 2685,
+        "catering_charge": 400,
+        "alt_cnf_seat": null,
+        "total_fare": 3085,
+        "date": "23-4-2024",
+        "confirm_probability_percent": "94",
+        "confirm_probability": "High",
+        "current_status": "GNWL99/WL43."
+      },
+      {
+        "ticket_fare": 2685,
+        "catering_charge": 400,
+        "alt_cnf_seat": null,
+        "total_fare": 3085,
+        "date": "24-4-2024",
+        "confirm_probability_percent": "94",
+        "confirm_probability": "High",
+        "current_status": "GNWL89/WL63."
+      },
+      {
+        "ticket_fare": 2685,
+        "catering_charge": 400,
+        "alt_cnf_seat": null,
+        "total_fare": 3085,
+        "date": "25-4-2024",
+        "confirm_probability_percent": "95",
+        "confirm_probability": "High",
+        "current_status": "GNWL93/WL43."
+      },
+      {
+        "ticket_fare": 2685,
+        "catering_charge": 400,
+        "alt_cnf_seat": null,
+        "total_fare": 3085,
+        "date": "26-4-2024",
+        "confirm_probability_percent": "90",
+        "confirm_probability": "High",
+        "current_status": "GNWL129/WL60."
+      },
+      {
+        "ticket_fare": 2685,
+        "catering_charge": 400,
+        "alt_cnf_seat": null,
+        "total_fare": 3085,
+        "date": "27-4-2024",
+        "confirm_probability_percent": "92",
+        "confirm_probability": "High",
+        "current_status": "GNWL118/WL58."
+      },
+      {
+        "ticket_fare": 2685,
+        "catering_charge": 400,
+        "alt_cnf_seat": null,
+        "total_fare": 3085,
+        "date": "28-4-2024",
+        "confirm_probability_percent": "95",
+        "confirm_probability": "High",
+        "current_status": "GNWL63/WL31."
+      }
+    ]
+  }

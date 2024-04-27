@@ -1,0 +1,81 @@
+.pnr-input{
+    height: auto;
+    margin: auto;
+    width: 80vw;
+    border: 1px solid black;
+}
+
+.pnr-input input{
+    display: block;
+    margin: 20px auto;
+    width: 20vw;
+    height: auto;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.pnr-btn{
+    height: auto;
+    background-color: blueviolet;
+    width: 12vw;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 7px;
+    margin: 20px auto;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.pnr-input-message{
+    width: 20vw;
+    margin: 10px auto;
+}
+
+.pnr-result{
+    height: auto;
+    margin: 5vh auto;
+    width: 80vw;
+    border: 1px solid black;
+}
+
+.pnr-result-header{
+    height: auto;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.pnr-result-left{
+    height: auto;
+    width: 40vw;
+    margin: 25px;
+}
+
+.pnr-result-right{
+    height: auto;
+    width: 40vw;
+    margin: 25px;
+}
+
+.pnr-element{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pnr-left-element{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pnr-right-element{
+    padding: 8px 10px;
+}

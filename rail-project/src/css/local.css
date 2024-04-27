@@ -1,0 +1,69 @@
+.local-input-field{
+    margin: auto;
+    width: 70vw;
+    height: 15vh;
+    /* background-color: bisque; */
+}
+
+.local-input-field > *{
+    background-color: bisque;
+    color: black;
+    height: 7vh;
+    width: 15vw;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.local-input-field-source{
+    margin-right: 20px;
+}
+
+.local-input-field-destination{
+    margin-left: 20px;
+}
+
+.local-search-btn{
+    margin-left: 40px;
+    text-align: center;
+    width: 15vw;
+}
+
+.local-station{
+    margin: 10px auto 10px auto;
+    width: 70vw;
+    /* height: 8.5vh; */
+    height: auto;
+    padding: 15px;
+    font-size: 25px;
+    background-color: bisque;
+    border-radius: 10px;
+    background-color: bisque;
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+
+.local-station-route{
+    margin: auto;
+    width: 60vw;
+    border-radius: 10px;
+    border: none;
+    min-height: 9.5vh;
+    height: auto;
+    background-color: rgb(94, 192, 192);
+    /* color: white; */
+}
+
+.local-station-route > *{
+    font-size: 20px;
+    padding: 3px 25px;
+    /* border-color: white; */
+}
+
+.local-station-route.active {
+    display: block; /* Show when active */
+    position: relative;
+    top: 20px; /* Adjust this value as needed to shift the route below the station */
+}

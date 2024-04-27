@@ -1,0 +1,27 @@
+/* .dropdown-result:empty{
+    
+} */
+
+.dropdown-result:not(:empty){
+    overflow: auto;
+    min-height: 5vh;
+    max-height: 40vh;
+    width: 30vw;
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+
+.dropdown-result-child{
+    margin: 10px;
+    cursor: pointer;
+    width: 25vw;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+.dropdown-result-child:hover{
+    background-color: blue;
+    color: white;
+}

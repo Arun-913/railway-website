@@ -1,0 +1,26 @@
+.train-schedule-header{
+    margin: auto;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.train-schedule-header-child{
+    text-align: center;
+    padding: 10px;
+}
+
+.train-schedule-station{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    margin: auto;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
