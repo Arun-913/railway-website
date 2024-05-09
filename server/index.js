@@ -54,6 +54,6 @@ io.on('connection', (socket) => {
     });
 });
 
-io.listen(8000);
+io.listen(process.env.CHAT_PORT);
 
 app.listen(process.env.PORT, () => console.log(`Server Started at ${process.env.PORT}`));
