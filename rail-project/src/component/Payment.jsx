@@ -16,7 +16,7 @@ function PaymentComponent({ train, passenger, email, id, receipt}) {
 
         const initializeRazorpay = () => {
             const options = {
-                key: REACT_APP_RAZORPAY_KEY,
+                key: process.env.REACT_APP_RAZORPAY_KEY,
                 amount: "100",
                 currency: "INR",
                 name: "TrackEase",

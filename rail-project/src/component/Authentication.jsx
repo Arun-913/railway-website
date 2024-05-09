@@ -71,13 +71,13 @@ const Authentication = (props) => {
   }, [onAuthStateChanged]);
 
   if(Cookies.get('email') !== null || Cookies.get('email') != ''){
-    // navigate('/');
+    navigate('/');
   }
 
   if (currentUser !== null) {
     const { setUser } = useDataContex();
     setUser(currentUser);
-    // navigate('/');
+    navigate('/');
   }
 
   return (
@@ -91,12 +91,12 @@ const Authentication = (props) => {
             style={activePage === 'login' ? style1 : style2}
             onClick={() => handlePageChange('login')}
           >
-            Login
+            Signin
           </h2>
           <h2
-            className={`title ${activePage === 'signin' ? 'active' : ''}`}
-            style={activePage === 'signin' ? style1 : style2}
-            onClick={() => handlePageChange('signin')}
+            className={`title ${activePage === 'signup' ? 'active' : ''}`}
+            style={activePage === 'signup' ? style1 : style2}
+            onClick={() => handlePageChange('signup')}
           >
             Signup
           </h2>

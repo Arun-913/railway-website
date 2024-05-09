@@ -41,8 +41,8 @@ const handleUpdateProfileWithTicket = async(req, res) =>{
             );
     
             // console.log('Updated profile:', updatedProfile);
-    
-            // await sendPdf(data.email, fileName);
+            
+            await sendPdf(req.body?.email, fileName);
             return res.json({ msg: 'success' });
         }, 2000);
     } catch (error) {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {useNavigate}from 'react-router-dom';
-import Header1 from "./Header1";
+import Header1 from "./Header1.jsx";
 import '../css/chat.css';
 import axios from 'axios';
 
@@ -8,7 +8,7 @@ import axios from 'axios';
 import {app} from '../firebase/firebase.js';
 import { getDatabase, ref, set, get, child, onValue } from "firebase/database";
 
-import { useDataContex } from "./DataContex";
+import { useDataContex } from "./DataContex.jsx";
 import io from 'socket.io-client';
 const socket = io.connect("http://localhost:8000");
 
@@ -75,6 +75,7 @@ const Chat = () => {
         // addUserMessage(message);
         const email = user.email;
         socket.emit("send_message", { message, userName, email });
+        setMessage('');
     }
 
     useEffect(() => {
@@ -93,6 +94,12 @@ const Chat = () => {
             socket.off("receive_message");
         };
     }, [socket]);
+    
+    const handleKeyPress = (event) =>{
+        if(event.key === 'Enter'){
+            sendMessage();
+        }
+    }
 
     useEffect(() =>{
         addUserName();
@@ -106,9 +113,13 @@ const Chat = () => {
                     {elements}
                 </div>
                 <div className="chat-message-box">
-                    <input type="text" name="" id="" onChange={(e) => setMessage(e.target.value)} placeholder="Enter Message" />
+                    <input 
+                        type="text" 
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)} 
+                        placeholder="Enter Message" 
+                        onKeyPress={handleKeyPress}/>
                     <div className="btn" onClick={sendMessage}>Send</div>
-                    {/* <div className="btn" onClick={fetchData}>fetch</div> */}
                 </div>
             </div>
         </>

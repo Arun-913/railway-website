@@ -31,15 +31,15 @@ export const SocketProvider = (props) =>{
 
 
     useEffect(() =>{
-        const _socket = io('http://localhost:8002');
-        setSocket(_socket);
-        _socket.on('message', receivedMessageFromContext);
+        // const _socket = io('http://localhost:8002');
+        // setSocket(_socket);
+        // _socket.on('message', receivedMessageFromContext);
 
-        return () =>{
-            _socket.disconnect();
-            setSocket(undefined);
-            _socket.off("message", receivedMessageFromContext);
-        }
+        // return () =>{
+        //     _socket.disconnect();
+        //     setSocket(undefined);
+        //     _socket.off("message", receivedMessageFromContext);
+        // }
     },[]);
 
     return (

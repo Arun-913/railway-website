@@ -18,13 +18,14 @@ import Express from './component/Express';
 import Local from './component/Local';
 // import Chat2 from './component/Chat2';
 import Booking from './component/Booking';
-import Chat3 from './component/Chat3';
+// import Chat3 from './component/Chat3';
 import News from './component/News';
 import PublishNews from './component/PublishNews';
 import NewsFullContent from './component/NewsFullContent';
 import Profile from './component/Profile';
 import Pnr from './component/Pnr';
 import TrainSchedule from './component/TrainSchedule';
+import Chat from './component/Chat';
 
 const Temp = () =>{
   const location = useLocation();
@@ -46,7 +47,7 @@ const Temp = () =>{
           <Route path="/authentication" element={<Authentication />} />
           <Route path="/express" element={<Express />} />
           <Route path="/local" element={<Local />} />
-          <Route path="/chat" element={<Chat3/>} />
+          <Route path="/chat" element={<Chat/>} />
           <Route path="/booking" element={<Booking/>} />
           <Route path="/news" element={<News/>} />
           <Route path="/publish-news" element={<PublishNews/>} />

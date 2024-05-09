@@ -23,7 +23,7 @@ const getStationCode = async (station) => {
         url: 'https://rstations.p.rapidapi.com/',
         headers: {
             'content-type': 'application/json',
-            'X-RapidAPI-Key': REACT_APP_API_KEY,
+            'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
             'X-RapidAPI-Host': 'rstations.p.rapidapi.com'
         },
         data: { search: station }
@@ -43,7 +43,7 @@ const GetTrainBetweenStations = async (from, to, date, selectedOption) =>{
         method: 'GET',
         headers: {
             // 'X-RapidAPI-Key': '0328c579e3msh3974a6df802e0fep1c9edcjsn6dac98a91896',
-            'X-RapidAPI-Key': REACT_APP_API_KEY,
+            'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
             'X-RapidAPI-Host': 'irctc1.p.rapidapi.com'
         }
     };
@@ -71,7 +71,7 @@ const checkSeatAvailability = async(classType, fromStationCode, quota, toStation
             date: date
         },
         headers: {
-            'X-RapidAPI-Key': REACT_APP_API_KEY,
+            'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
             'X-RapidAPI-Host': 'irctc1.p.rapidapi.com'
         }
     };

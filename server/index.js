@@ -39,4 +39,21 @@ app.get('/get/profile', handleGetProfile);
 app.get('/get-message', handleInsertMessage);
 app.post('/post-message', handlefetchMessage);
 
+const io = new Server(server, {
+    cors: {
+        origin: 'http://localhost:3000',
+        methods: ['GET', 'POST']
+    }
+});
+
+io.on('connection', (socket) => {
+    // console.log('a user connected : ', socket.id);
+
+    socket.on("send_message", (data) =>{
+        socket.broadcast.emit(`receive_message`, data);
+    });
+});
+
+io.listen(8000);
+
 app.listen(process.env.PORT, () => console.log(`Server Started at ${process.env.PORT}`));

@@ -10,7 +10,7 @@ const fetchPnrStatus = async(pnr) =>{
         method: 'GET',
         url: `https://pnr-status-indian-railway.p.rapidapi.com/pnr-check/${pnr}`,
         headers: {
-          'X-RapidAPI-Key': REACT_APP_API_KEY,
+          'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
           'X-RapidAPI-Host': 'pnr-status-indian-railway.p.rapidapi.com'
         }
     };
@@ -110,15 +110,15 @@ const Pnr = () =>{
             return;
         }
         setLoading(true);
-        setPnrDetails(pnrStatus);
+        // setPnrDetails(pnrStatus);
         
-        // const response = await fetchPnrStatus(pnr);
-        // if(response.status == 'false'){
-        //     setMessage('PNR information not found');
-        //     return;
-        // }
+        const response = await fetchPnrStatus(pnr);
+        if(response.status == 'false'){
+            setMessage('PNR information not found');
+            return;
+        }
         // console.log(response);
-        // setPnrDetails(response);
+        setPnrDetails(response);
         setMessage('');
         setLoading(false);
     }

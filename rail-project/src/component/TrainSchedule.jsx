@@ -115,14 +115,14 @@ const TrainSchedule = () =>{
         }
         setLoading(true);
 
-        // const temp = await fetchTrainSchedule(trainNo);
-        // if(temp.status == false){
-        //     setMessage('Train Number is Invalid');
-        //     return;
-        // }
-        // setTrainDetails(temp);
+        const temp = await fetchTrainSchedule(trainNo);
+        if(temp.status == false){
+            setMessage('Train Number is Invalid');
+            return;
+        }
+        setTrainDetails(temp);
 
-        setTrainDetails(trainschedule);
+        // setTrainDetails(trainschedule);
         setLoading(false);
         setMessage('');
     }
