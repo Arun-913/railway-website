@@ -21,6 +21,10 @@ app.use(bodyParser.json());
 
 connectMongoDB(process.env.MONGO_URL);
 
+app.get('/', (req, res)=>{
+    return res.send("Server is running");
+})
+
 app.post('/post-user', handelSignUp);
 app.get('/get-user:email', handleLogin);
 
