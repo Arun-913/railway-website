@@ -19,45 +19,45 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
 
-connectMongoDB(process.env.MONGO_URL);
+// connectMongoDB(process.env.MONGO_URL);
 
 app.get('/', (req, res)=>{
     return res.send("Server is running");
 })
 
-app.post('/post-user', handelSignUp);
-app.get('/get-user:email', handleLogin);
+// app.post('/post-user', handelSignUp);
+// app.get('/get-user:email', handleLogin);
 
-app.post('/generate-otp', handleSendOTP);
+// app.post('/generate-otp', handleSendOTP);
 
-app.post('/post-news', handlePostNews);
-app.get('/get-news', handleGetNews);
-app.get('/get-news/:id', handleGetNewsById);
-app.post('/post-comment', handlePostComment);
+// app.post('/post-news', handlePostNews);
+// app.get('/get-news', handleGetNews);
+// app.get('/get-news/:id', handleGetNewsById);
+// app.post('/post-comment', handlePostComment);
 
-app.post('/createOrder', createOrderId);
+// app.post('/createOrder', createOrderId);
 
-app.post('/post-ticket', handleUpdateProfileWithTicket);
-app.get('/get/profile', handleGetProfile);
+// app.post('/post-ticket', handleUpdateProfileWithTicket);
+// app.get('/get/profile', handleGetProfile);
 
-app.get('/get-message', handleInsertMessage);
-app.post('/post-message', handlefetchMessage);
+// app.get('/get-message', handleInsertMessage);
+// app.post('/post-message', handlefetchMessage);
 
-const io = new Server(server, {
-    cors: {
-        origin: 'http://localhost:3000',
-        methods: ['GET', 'POST']
-    }
-});
+// const io = new Server(server, {
+//     cors: {
+//         origin: 'http://localhost:3000',
+//         methods: ['GET', 'POST']
+//     }
+// });
 
-io.on('connection', (socket) => {
-    // console.log('a user connected : ', socket.id);
+// io.on('connection', (socket) => {
+//     // console.log('a user connected : ', socket.id);
 
-    socket.on("send_message", (data) =>{
-        socket.broadcast.emit(`receive_message`, data);
-    });
-});
+//     socket.on("send_message", (data) =>{
+//         socket.broadcast.emit(`receive_message`, data);
+//     });
+// });
 
-io.listen(process.env.CHAT_PORT);
+// io.listen(process.env.CHAT_PORT);
 
 app.listen(process.env.PORT, () => console.log(`Server Started at ${process.env.PORT}`));
